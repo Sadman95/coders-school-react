@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import About from './componenets/About/About';
@@ -13,19 +15,27 @@ import Trainers from './componenets/Trainers/Trainers';
 
 
 function App() {
+
+  const [courses, setCourses] = useState([]);
+  useEffect(() =>{
+      fetch('https://sadman95.github.io/course_data/course_json/data.json')
+      .then(res => res.json())
+      .then(data => setCourses(data))
+  }, [])
+
   return (
     <div className="App">
       <Router>
         <Header></Header>
         <Switch>
           <Route exact path='/'>
-            <Home></Home>
+            <Home courses={courses}></Home>
           </Route>
           <Route path='/about'>
             <About></About>
           </Route>
           <Route path='/courses'>
-            <Courses></Courses>
+            <Courses courses={courses}></Courses>
           </Route>
           <Route path='/trainers'>
             <Trainers></Trainers>

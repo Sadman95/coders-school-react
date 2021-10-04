@@ -4,13 +4,14 @@ import Banner from '../Banner/Banner';
 import Contact from '../Contact/Contact';
 import Courses from '../Courses/Courses';
 
-const Home = () => {
+const Home = (props) => {
+    const {courses} = props;
+    const slicedCourses = courses.slice(0,3);
     return (
         <div>
-            <h1>This is home</h1>
             <Banner></Banner>
             <About></About>
-            <Courses></Courses>
+            <Courses courses={slicedCourses}></Courses>
             <Contact></Contact>
         </div>
     );
