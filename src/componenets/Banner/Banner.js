@@ -9,7 +9,8 @@ const Banner = () => {
     const bannerStyle = {
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        textAlign: 'left'
     }
 
     const history = useHistory();

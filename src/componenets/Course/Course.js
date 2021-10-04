@@ -7,15 +7,12 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 
 const Course = (props) => {
-  const { img_url, course_title, course_fee, description } = props.course;
+  const { course_id, img_url, course_title, course_fee, description } = props.course;
 
-  const history = useHistory();
-  const handleEnrolled = () =>{
-      history.push('/enrolled');
-  }
+
 
   return (
     <Card sx={{ maxWidth: 345, boxShadow: 3, borderRadius: 1,textAlign: 'left'}}>
@@ -37,7 +34,8 @@ const Course = (props) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button onClick={handleEnrolled} variant='contained' size="medium">Enroll Now</Button>
+        <Link style={{textDecoration:'none'}} to={`/enrolled/${course_id}`}>
+        <Button variant='contained' size="medium">Enroll Now</Button></Link>
       </CardActions>
     </Card>
   );

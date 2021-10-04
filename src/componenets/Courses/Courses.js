@@ -6,7 +6,6 @@ import Course from "../Course/Course";
 
 
 const Courses = (props) => {
-    console.log(props)
     const {courses} = props;
 
   return (
