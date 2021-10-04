@@ -46,9 +46,9 @@ const Footer = () => {
             <ul>
                 <p>Follow us</p>
                 <Box sx={{listStyle: 'none',display: 'flex'}}>
-                    <li><Link to='/processing'><FacebookIcon></FacebookIcon></Link></li>
-                    <li><Link to='/processing'><LinkedInIcon></LinkedInIcon></Link></li>
-                    <li><Link to='/processing'><GitHubIcon></GitHubIcon></Link></li>
+                    <li><Link to='https://www.facebook.com/s.sadman.9/'><FacebookIcon></FacebookIcon></Link></li>
+                    <li><Link to='https://www.linkedin.com/in/sadman-sakib-082083201'><LinkedInIcon></LinkedInIcon></Link></li>
+                    <li><Link to='https://github.com/Sadman95?tab=repositories'><GitHubIcon></GitHubIcon></Link></li>
                 </Box>
             </ul>
         </Box>

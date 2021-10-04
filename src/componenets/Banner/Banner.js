@@ -18,12 +18,12 @@ const Banner = () => {
     }
     return (
         <Box sx={bannerStyle}>
-            <div style={{width: '60%'}}>
+            <div style={{width: '55%'}}>
                 <img style={{width: '100%'}} src={banner} alt="" />
             </div>
             <div>
-                <h1><span className='spanned'>Coding</span> is Fun.It's not that kind of hard as we think.</h1>
-                <h3>If you want to learn any <span className='spanned'>programming</span> language, go to courses.</h3>
+                <h2><span className='spanned'>Coding</span> is Fun.It's not that kind of hard as we think.</h2>
+                <h3>If you want to learn any <span className='spanned'>programming</span> language, <br /> go to courses.</h3>
                 <Button onClick={handleCourses} variant='contained'>Courses</Button>
             </div>
         </Box>

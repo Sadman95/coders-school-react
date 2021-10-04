@@ -6,7 +6,7 @@ import Courses from '../Courses/Courses';
 
 const Home = (props) => {
     const {courses} = props;
-    const slicedCourses = courses.slice(0,3);
+    const slicedCourses = courses.slice(0,4);
     return (
         <div>
             <Banner></Banner>

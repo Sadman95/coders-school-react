@@ -18,7 +18,7 @@ const Course = (props) => {
   }
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, boxShadow: 3, borderRadius: 1,textAlign: 'left'}}>
       <CardMedia
         component="img"
         height="140"
