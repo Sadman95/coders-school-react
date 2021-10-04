@@ -5,12 +5,13 @@ import './App.css';
 import About from './componenets/About/About';
 import Contact from './componenets/Contact/Contact';
 import Courses from './componenets/Courses/Courses';
+import Enrolled from './componenets/Enrolled/Enrolled';
 import Footer from './componenets/Footer/Footer';
 import Header from './componenets/Header/Header';
 import Home from './componenets/Home/Home';
 import NotFound from './componenets/NotFound/NotFound';
 import Processing from './componenets/Processing/Processing';
-import Trainers from './componenets/Trainers/Trainers';
+
 
 
 
@@ -37,8 +38,8 @@ function App() {
           <Route path='/courses'>
             <Courses courses={courses}></Courses>
           </Route>
-          <Route path='/trainers'>
-            <Trainers></Trainers>
+          <Route path='/enrolled'>
+            <Enrolled></Enrolled>
           </Route>
           <Route path='/contact'>
             <Contact></Contact>
