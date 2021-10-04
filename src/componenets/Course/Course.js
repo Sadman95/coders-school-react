@@ -10,7 +10,7 @@ import React from "react";
 import { useHistory } from "react-router";
 
 const Course = (props) => {
-  const { img_url, course_title, description } = props.course;
+  const { img_url, course_title, course_fee, description } = props.course;
 
   const history = useHistory();
   const handleEnrolled = () =>{
@@ -21,7 +21,7 @@ const Course = (props) => {
     <Card sx={{ maxWidth: 345, boxShadow: 3, borderRadius: 1,textAlign: 'left'}}>
       <CardMedia
         component="img"
-        height="140"
+        height="200"
         image={img_url}
         alt="green iguana"
       />
@@ -31,6 +31,9 @@ const Course = (props) => {
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {description}
+        </Typography>
+        <Typography variant="h3" component="div">
+          ${course_fee}
         </Typography>
       </CardContent>
       <CardActions>
