@@ -1,0 +1,9 @@
+ul{
+    padding: 0;
+    text-align: left;
+}
+.listLink{
+    text-decoration: none;
+    color: #5E17EB;
+    font-weight: 500;
+}
