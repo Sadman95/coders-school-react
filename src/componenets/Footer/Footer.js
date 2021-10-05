@@ -29,7 +29,6 @@ const Footer = () => {
                 <ul>
                     <li><Link className='listLink' to='/about'>About Us</Link></li>
                     <li><Link className='listLink' to='/courses'>Courses</Link></li>
-                    <li><Link className='listLink' to='/trainers'>Trainers</Link></li>
                     <li><Link className='listLink' to='/contact'>Contact</Link></li>
                 </ul>
             </Box>
