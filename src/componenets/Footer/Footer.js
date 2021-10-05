@@ -14,16 +14,16 @@ const Footer = () => {
         display: 'flex',
         justifyContent: 'space-evenly',
         textAlign: 'left',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     }
     const logoStyle = {
         width: 100,
       }
     return (
-        <Box sx={footerStyle}>
-            <div>
+            <Box sx={footerStyle}>
+            <Box>
                 <img style={logoStyle} src={logo} alt="" />
-            </div>
+            </Box>
             <Box sx={{color: 'navy'}}>
                 <p>Go To</p>
                 <ul>

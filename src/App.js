@@ -1,3 +1,4 @@
+import { Box } from '@mui/system';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -25,7 +26,7 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <Box className="App">
       <Router>
         <Header></Header>
         <Switch>
@@ -44,7 +45,7 @@ function App() {
           <Route path='/contact'>
             <Contact></Contact>
           </Route>
-          <Route to='/processing'>
+          <Route path='/processing'>
             <Processing></Processing>
           </Route>
           <Route path='*'>
@@ -53,7 +54,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
-    </div>
+    </Box>
   );
 }
 

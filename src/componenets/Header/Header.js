@@ -10,6 +10,11 @@ const Header = () => {
         width: 100,
       }
     const headerStyle = {
+        position: 'sticky',
+        left: 0,
+        top: 0,
+        backgroundColor: 'white',
+        zIndex: 999,
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center'
