@@ -13,7 +13,7 @@ const About = () => {
                 <p><CheckCircleOutlineIcon></CheckCircleOutlineIcon>&nbsp;We organize special bootcamp sessions.</p>
                 <p><small>and many more...</small></p>
             </Box>
-            <Box sx={{width: '50%'}}>
+            <Box sx={{width: '45%'}}>
                 <img style={{width: '100%'}} src={about} alt="" />
             </Box>
         </Box>
