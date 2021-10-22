@@ -4,6 +4,9 @@ import about from './about.jpg';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 const About = () => {
+
+    document.title = 'Coders School-about';
+
     return (
         <Box sx={{display: 'flex',justifyContent: 'space-evenly', alignItems: 'center'}}>
             <Box sx={{textAlign: 'left'}}>

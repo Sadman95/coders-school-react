@@ -15,6 +15,7 @@ const Footer = () => {
         justifyContent: 'space-evenly',
         textAlign: 'left',
         fontWeight: 'bold',
+        marginTop: 22
     }
     const logoStyle = {
         width: 100,

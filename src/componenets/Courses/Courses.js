@@ -8,6 +8,9 @@ import Course from "../Course/Course";
 const Courses = (props) => {
     const {courses} = props;
 
+
+    document.title = 'Coders School-courses';
+
   return (
     <Box>
         <h1 className='spanned'>Courses</h1>

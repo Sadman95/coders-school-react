@@ -4,6 +4,9 @@ import React from "react";
 import SendIcon from "@mui/icons-material/Send";
 
 const Contact = () => {
+
+  document.title = 'Coders School-contact';
+
   return (
     <Box
       sx={{
